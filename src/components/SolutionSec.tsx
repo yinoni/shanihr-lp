@@ -10,7 +10,7 @@ const SolutionSec = () => {
         <div className="section solution-cont">
             <div className="cards-container">
                 <Card icon={faBullseye} cardTopic="תהליך קל ומדויק" cardTxt="עם תהליך קל ומדויק, המועמד המתאים נמצא במרחק נגיעה" />
-                <Card icon={faCheck} cardTopic=" !איתור עובדים על בסיס הצלחה בלבד " cardTxt="אני מאתרת עובדים על בסיס הצלחות מוכחות, כדי להבטיח תוצאות מרשימות בכל תחום" />
+                <Card icon={faCheck} cardTopic=" !איתור עובדים על בסיס הצלחה בלבד " cardTxt="אני מאתרת עובדים על סמך הצלחות מוכחות כדי להבטיח תוצאות מרשימות בכל התחומים" />
                 <Card icon={faDollarSign} cardTopic=" !לא מרוצים? לא משלמים" cardTxt="לא מרוצים? זה פשוט – לא משלמים! אני מחוייבת לסיפוק שלכם" />
             </div>
             <div className="main-info">

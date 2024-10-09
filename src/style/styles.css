@@ -20,6 +20,7 @@ body, #root{
     width: 90%;
     margin: 0 auto;
     padding: 20px 0;
+
 }
 
 .section{
@@ -31,18 +32,20 @@ body, #root{
 }
 
 .blob1-img{
-    position: absolute;
     top: 100%;
     right: 0;
-    z-index: -100;
-    display: none;
 }
 
 .blob{
     position: absolute;
-    z-index: -1;
+    z-index: -100;
     display: none;
 }
+
+.section{
+    margin-bottom: 350px;
+}
+
 
 @media screen and (max-width: 1100px) {
 
@@ -64,9 +67,6 @@ body, #root{
         left: 0;
     }
 
-    .section{
-        margin-bottom: 200px;
-    }
 
     /*Open section*/
 
@@ -100,24 +100,21 @@ body, #root{
 
     /*Solution Section*/
     .solution-cont .cards-container{
-        display: grid;
-        grid-template-columns: auto auto;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        gap: 50px 40px;
-        width: 100%;
     }
     
     .solution-cont .cards-container .card-cont,
     .solution-cont .cards-container .card-cont:nth-child(2){
-        height: 80%;
+        height: 30%;
         width: 100%;
-        padding: 40px 0; 
+        padding: 30px 0; 
         margin: 0;
     }
 
-    .solution-cont .cards-container .card-cont:nth-child(3){
-        grid-column: 1 / span 2;
-        grid-row: 2;
+    .solution-cont .cards-container .card-cont:nth-child(2){
+        margin: 40px 0;
     }
 
     .card-cont .card-topic{
@@ -228,23 +225,109 @@ body, #root{
         font-size: 14px;
     }
 
-    .contact-me-container .contact-me .btn{
-        width: 40%;
-    }
-
     .contact-me .btn .text{
         font-size: 16px;
     }
 
-    .contact-me .btn img{
-        display: none;
+    .contact-me-container .illustration{
+        width: 40%;
     }
+
 }
 
 @media screen and (max-width: 500px){
+    .section{
+        margin-bottom: 200px;
+    }
+    .blob1-img{
+        top: 300%;
+        right: 0;        
+        width: 80%;
+    }
+
+    .blob3-img{
+        top: 80%;
+        left: 0;
+    }
+    .main .opening-text{
+        width: 100%;
+    }
+    .open-sec-container .main{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .open-sec-container .main .heading{
+        font-size: 32px;
+        width: 100%;
+    }
+
+    .open-sec-container .main .paragraph{
+        font-size: 14px;
+    }
+
+    .opening-text .highlighted-txt .text{
+        font-size: 20px;
+    }
+
+    .open-sec-container .coworkers-img{
+        display: none;
+    }
+
+    .opening-text .contact-btn{
+        width: 200px;
+        font-size: 18px;
+    }
+
+    .navbar-container .contact-btn{
+        height: 40px;
+        width: 150px;
+        font-size: 14px;
+
+    }
     .bottom .credit{
         margin: 0;
         color: rgb(155, 155, 155);
         font-size: 12px;
     }
+
+    .section .heading{
+        font-size: 34px;
+        margin-bottom: 20px;
+    }
+
+    .reviews-cont .text{
+        width: 80%;
+        font-size: 16px;
+    }
+    .carousel-container .btns{
+        width: 20%;
+        
+    }
+
+    .contact-me-container .contact-me{
+        flex-direction: column;
+        height: fit-content;
+        
+    }
+
+    .contact-me .text-cont{
+        margin: 20px 0;
+    }
+
+    .contact-me-container .illustration{
+        width: 60%;
+        top: -90%;
+    }
+
+    .about-text{
+        width: 100%;
+        font-size: 20px;
+
+    }
+
+
+    
 }

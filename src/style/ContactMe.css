@@ -1,5 +1,6 @@
 .contact-me-container{
     display: flex;
+    margin-top: -200px;
 }
 
 .contact-me{
@@ -8,7 +9,7 @@
 
     padding: 30px 20px;
     text-align: right;
-    width: 60%;
+    width: 100%;
     margin-top: 300px;
     border-radius: 10px;
     height: 150px;
@@ -32,7 +33,7 @@
 
 .contact-me .text-cont{
     color: white;
-    width: 60%;
+    width: 100%;
 }
 
 .contact-me .text-cont .heading{
@@ -54,6 +55,7 @@
     cursor: pointer;
     position: relative;
     z-index: 1;
+    padding: 0 20px;
 }
 
 .contact-me .btn:hover{
@@ -64,7 +66,7 @@
 .contact-me-container .illustration{
     width: 30%;
     position: absolute;
-    top: -100%;
+    top: -160%;
     right: 50px;
     z-index: -1;
 }
