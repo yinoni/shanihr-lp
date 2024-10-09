@@ -12,13 +12,13 @@ import blob3 from './assets/blob3.svg';
 function App() {
   return (
     <div className='container'>
-        <img src={blob3} alt="blob" className="blob blob3-img" />
         <HeadingSec />
         <SolutionSec />
         <AboutSec />
         <ReviewsSection />
         <ContactMe />
         <Footer />
+        <img src={blob3} alt="blob" className="blob blob3-img" />
         <img src={blob2} alt="blob" className="blob blob1-img" />
 
     </div>

@@ -31,16 +31,33 @@ body, #root{
     font-weight: 200;
 }
 
-.blob1-img{
-    top: 100%;
-    right: 0;
-}
-
 .blob{
     position: absolute;
     z-index: -100;
-    display: none;
 }
+
+.blob1-img{
+    top: 200%;
+    right: 0;        
+    width: 50%;
+}
+
+.blob3-img{
+    top: 80%;
+    left: 0;
+}
+
+
+
+
+.reviews-cont .blob{
+    position: absolute;
+    left: 0;
+    top: 30%;
+    z-index: -1;
+    width: 40%;
+}
+
 
 .section{
     margin-bottom: 350px;
@@ -49,23 +66,14 @@ body, #root{
 
 @media screen and (max-width: 1100px) {
 
-    .container{
+    .blob{
+        display: none;
     }
 
     .logo{
         font-size: 20px;
     }
 
-    .blob1-img{
-        top: 300%;
-        right: 0;        
-        width: 80%;
-    }
-
-    .blob3-img{
-        top: 80%;
-        left: 0;
-    }
 
 
     /*Open section*/
@@ -204,12 +212,7 @@ body, #root{
         margin: 0 20px;
     }
 
-    .reviews-cont .blob{
-        position: absolute;
-        left: 0;
-        z-index: -1;
-        width: 70%;
-    }
+    
 
     /*Contact Me*/
     .contact-me-container .contact-me{
@@ -239,16 +242,7 @@ body, #root{
     .section{
         margin-bottom: 200px;
     }
-    .blob1-img{
-        top: 300%;
-        right: 0;        
-        width: 80%;
-    }
-
-    .blob3-img{
-        top: 80%;
-        left: 0;
-    }
+    
     .main .opening-text{
         width: 100%;
     }
