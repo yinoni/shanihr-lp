@@ -1,0 +1,69 @@
+.solution-cont .cards-container{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: -30px auto 150px auto;
+    justify-content: center;
+}
+
+.solution-cont .cards-container .card-cont:nth-child(2){
+    margin: 0 20px;
+    padding: 40px 0;
+    height: 350px;
+}
+
+.solution-cont .cards-container .card-cont:nth-child(2)::after,
+.solution-cont .cards-container .card-cont:nth-child(2)::before{
+    content: "";
+    width: 75%;
+    height: 2px;
+    position: absolute;
+    top: 25%;
+    z-index: -100;
+
+}
+
+.solution-cont .cards-container .card-cont:nth-child(2)::after{
+    right: -200px;
+}
+
+.solution-cont .cards-container .card-cont:nth-child(2)::before{
+    left: -200px;
+}
+
+.solution-cont .main-info{
+    text-align: center;
+    margin-top: 250px;
+}
+
+.solution-cont .main-info .heading{
+    color: #2B2730; 
+    font-size: 56px;
+    margin-bottom: 30px; 
+}
+
+.solution-cont .main-info .text{
+    font-size: 22px;
+    width: 40%;
+    margin: 0 auto;
+    color: #A7A7A7;
+}
+
+.solution-cont .main-info .experience-section{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.experience-section .left-container{
+    text-align: right;
+    margin-right: 100px;
+}
+
+.experience-section .left-container .exp-card{
+    margin-bottom: 12%;
+}
+
+.solution-cont .main-info .experience-section img{
+    width: 50%;
+}

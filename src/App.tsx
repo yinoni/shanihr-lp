@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import HeadingSec from './components/HeadingSec';
+import SolutionSec from './components/SolutionSec';
+import AboutSec from './components/AboutSec';
+import ContactMe from './components/ContactMe';
+import Footer from './components/Footer';
+import ReviewsSection from './components/ReviewsSection';
+import './style/styles.css';
+import blob2 from './assets/blob2.svg';
+import blob3 from './assets/blob3.svg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+        <img src={blob3} alt="blob" className="blob blob3-img" />
+        <HeadingSec />
+        <SolutionSec />
+        <AboutSec />
+        <ReviewsSection />
+        <ContactMe />
+        <Footer />
+        <img src={blob2} alt="blob" className="blob blob1-img" />
+
     </div>
   );
 }
