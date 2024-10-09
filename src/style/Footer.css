@@ -20,6 +20,14 @@
 
 .bottom{
     text-align: right;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom .credit{
+    margin: 0 auto;
+    color: rgb(155, 155, 155);
+
 }
 
 .bottom a{

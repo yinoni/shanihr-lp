@@ -16,15 +16,19 @@ const Footer = () => {
                 </div>
             </div>
             <div className="bottom">
-                <a className="social-link" href="#">
-                    <img src={linkedin} alt="svg" />
-                </a>
-                <a className="social-link" href="#">
-                <img src={instagram} alt="svg" />
-                </a>
-                <a className="social-link" href="#">
-                    <img src={facebook} alt="svg" />
-                </a>
+                <p className="credit">@Developed by Yinon Megidesh</p>
+                <div className="links">
+                    <a className="social-link" href="#">
+                        <img src={linkedin} alt="svg" />
+                    </a>
+                    <a className="social-link" href="#">
+                    <img src={instagram} alt="svg" />
+                    </a>
+                    <a className="social-link" href="#">
+                        <img src={facebook} alt="svg" />
+                    </a>
+                </div>
+                
             </div>
             
             

@@ -61,6 +61,14 @@
     border: 2px solid white;
 }
 
+.contact-me-container .illustration{
+    width: 30%;
+    position: absolute;
+    top: -100%;
+    right: 50px;
+    z-index: -1;
+}
+
 
 .contact-me .btn img{
     width: 25px;
