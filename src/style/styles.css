@@ -23,6 +23,16 @@ body, #root{
 
 }
 
+.navbar-menu{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 26px;
+    display: none;
+}
+
+
+
 .section{
     margin-bottom: 150px;
 }
@@ -242,6 +252,49 @@ body, #root{
     .section{
         margin-bottom: 200px;
     }
+
+    .navbar-container{
+        position: relative;
+    }
+
+    .navbar-menu{
+        display: block;
+    }
+
+    
+
+    .navbar-container .navbar-items{
+        position: absolute;
+        background-color: white;
+        border-radius: 15px 0 15px 15px;
+        box-shadow: 1px 2px 10px #ccc;
+        width: 50%;
+        right: 0;
+        flex-direction: column;
+        justify-content: center;
+        top: 110%;
+        padding: 30px 0;
+        z-index: 100;
+        display: flex;
+    }
+
+    .navbar-container .hidden{
+        display: none;
+    }
+
+    .navbar-container .navbar-items .navbar-item{
+        margin: 20px 0;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+    }
+
+    .navbar-container .navbar-items .navbar-item::after{
+        display: none;
+    }
+
+    .navbar-container .navbar-items .contact-btn{
+        margin-top: 20px;
+    }
     
     .main .opening-text{
         width: 100%;
@@ -263,7 +316,7 @@ body, #root{
     }
 
     .opening-text .highlighted-txt .text{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .open-sec-container .coworkers-img{
@@ -321,6 +374,8 @@ body, #root{
         font-size: 20px;
 
     }
+
+    
 
 
     

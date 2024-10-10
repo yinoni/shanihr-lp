@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import '../style/NavBar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 interface NBItemsProps{
     itemName: string,
@@ -17,15 +19,22 @@ const NBItem = ({itemName, href}: NBItemsProps) => {
 
 
 const NavBar = ({items}: Props) => {
-
+    const [navbarItems, toggleNavBarItems] = useState(false);
     let itemsComponents = items.map((item, key) => {
         return <NBItem key={key} itemName={item.itemName} href={item.href} />
-    })
+    });
+
+    const onMenuBtnClick = () => {
+        toggleNavBarItems(!navbarItems);
+    }
 
     return (
         <div className="navbar-container">
             <h1 className="logo">SHANI HR</h1>
-            <div className="navbar-items">
+            <button className="navbar-menu" onClick={onMenuBtnClick} >
+                <FontAwesomeIcon icon={faBars} />
+            </button>
+            <div className={`navbar-items ${navbarItems ? "" : "hidden"}`}>
                 {itemsComponents}
                 <button className="transparent-bg contact-btn">!יצירת קשר</button>
             </div>
