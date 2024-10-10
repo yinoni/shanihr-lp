@@ -7,17 +7,23 @@ import '../style/HeadingSec.css';
 const HeadingSec = () => {
     const nbItems = [
         {
+            itemName: 'ראשי',
+            href: '#'
+        },
+        {
             itemName: 'אודות',
-            href: 'about'
+            href: '#about'
         },
         {
             itemName: 'ביקורות',
-            href: 'reviews'
+            href: '#reviews'
         }
     ]
+
+
     return (
         <div className="section open-sec-container">
-            <NavBar items={nbItems}/>
+            <NavBar items={nbItems} />
             <div className="main">
                 <img src={cowrokers} className="coworkers-img" alt='svg' />
                 <div className="opening-text">

@@ -5,6 +5,7 @@
 .open-sec-container .main{
     display: flex;
     justify-content: space-between;
+    padding-top: 150px;
 }
 
 .main .opening-text{

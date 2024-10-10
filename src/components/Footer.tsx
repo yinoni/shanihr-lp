@@ -11,8 +11,9 @@ const Footer = () => {
             <div className="top">
                 <h1 className="logo">SHANI HR</h1>
                 <div className="links">
-                    <a href="#">אודות</a>
-                    <a href="#">ביקורות</a>
+                    <a href="#about">אודות</a>
+                    <a href="#reviews">ביקורות</a>
+                    <a href="#">ראשי</a>
                 </div>
             </div>
             <div className="bottom">

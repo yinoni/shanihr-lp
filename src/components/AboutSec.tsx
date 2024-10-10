@@ -3,7 +3,7 @@ import '../style/AboutSec.css';
 
 const AboutSec = () => {
     return (
-        <div className="section about-sec">
+        <div id="about" className="section about-sec">
             <div className="image-container">
                 <img src={require('../assets/shani.jpeg')} alt="img" />
                 <div className="reactangle">

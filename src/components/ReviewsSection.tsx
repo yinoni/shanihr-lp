@@ -5,7 +5,7 @@ import blob from '../assets/blob1.svg';
 
 const ReviewsSection = () => {
     return (
-        <div className="section reviews-cont">
+        <div id="reviews" className="section reviews-cont">
             <h1 className="heading">?מה הלקוחות שלי מספרים </h1>
             <p className="text">!הלקוחות שלי הם העדות הטובה ביותר לאיכות העבודה שלי. זה מה שיש להם לומר על החוויות שלהם וההצלחות שהשגנו יחד</p>
             <img className="blob" src={blob} alt="svg" />
