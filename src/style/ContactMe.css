@@ -1,22 +1,23 @@
 .contact-me-container{
     display: flex;
-    margin-top: -200px;
+    margin-top: 300px;
+    width: 100%;
+
 }
 
 .contact-me{
     background-color: #2B2730;
     position: relative;
-
     padding: 30px 20px;
     text-align: right;
     width: 100%;
-    margin-top: 300px;
     border-radius: 10px;
     height: 150px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .contact-me::after{

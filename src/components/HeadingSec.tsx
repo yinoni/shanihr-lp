@@ -38,7 +38,7 @@ const HeadingSec = ({onBtnClick}: Props) => {
                     אני מתמחה ביצירת פתרונות מותאמים אישית בתחום משאבי אנוש, כדי לסייע לך לגייס ולפתח כישרונות מובילים. אני כאן כדי להוביל אותך להצלחה
                     </p>
                     <div className="highlighted-txt">
-                        <p className="text">!הצטרפו אליי, ונבנה יחד את הצוות המנצח שלכם</p>
+                        <p className="text">!הצטרפו אליי, ונבנה יחד צוות מנצח</p>
                         <img className="image" src={highlighted} alt='svg' />
                     </div>
                     <button onClick={onBtnClick} className="contact-btn">!צרו קשר עכשיו</button>
