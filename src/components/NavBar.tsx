@@ -29,6 +29,11 @@ const NavBar = ({items, onBtnClick}: Props) => {
         toggleNavBarItems(!navbarItems);
     }
 
+    const onNBItemClick = () => {
+        onBtnClick();
+        toggleNavBarItems(false);
+    }
+
     return (
         <div className="navbar-container">
             <h1 className="logo">SHANI HR</h1>
@@ -37,7 +42,7 @@ const NavBar = ({items, onBtnClick}: Props) => {
             </button>
             <div className={`navbar-items ${navbarItems ? "" : "hidden"}`}>
                 {itemsComponents}
-                <button onClick={onBtnClick} className="transparent-bg contact-btn">!יצירת קשר</button>
+                <button onClick={onNBItemClick} className="transparent-bg contact-btn">!יצירת קשר</button>
             </div>
         </div>
     );

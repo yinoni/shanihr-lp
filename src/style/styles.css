@@ -78,7 +78,8 @@ body, #root{
 
     .blob3-img{
         top: 40%;
-        left: -10%;
+        left: -20%;
+        width: 60%;
     }
 
     .logo{
