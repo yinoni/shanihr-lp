@@ -4,7 +4,12 @@ import cowrokers from '../assets/cowrokers.svg';
 import highlighted from '../assets/highlighted1.svg';
 import '../style/HeadingSec.css';
 
-const HeadingSec = () => {
+interface Props{
+    onBtnClick: () => void
+}
+
+
+const HeadingSec = ({onBtnClick}: Props) => {
     const nbItems = [
         {
             itemName: 'ראשי',
@@ -23,7 +28,7 @@ const HeadingSec = () => {
 
     return (
         <div className="section open-sec-container">
-            <NavBar items={nbItems} />
+            <NavBar onBtnClick={onBtnClick} items={nbItems} />
             <div className="main">
                 <img src={cowrokers} className="coworkers-img" alt='svg' />
                 <div className="opening-text">
@@ -36,7 +41,7 @@ const HeadingSec = () => {
                         <p className="text">!הצטרפו אליי, ונבנה יחד את הצוות המנצח שלכם</p>
                         <img className="image" src={highlighted} alt='svg' />
                     </div>
-                    <button className="contact-btn">!צרו קשר עכשיו</button>
+                    <button onClick={onBtnClick} className="contact-btn">!צרו קשר עכשיו</button>
                 </div>
             </div>
         </div>

@@ -5,11 +5,12 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 interface NBItemsProps{
     itemName: string,
-    href: string
+    href: string,
 }
 
 interface Props{
-    items: any[]
+    items: any[],
+    onBtnClick: () => void
 }
 
 
@@ -18,7 +19,7 @@ const NBItem = ({itemName, href}: NBItemsProps) => {
 }
 
 
-const NavBar = ({items}: Props) => {
+const NavBar = ({items, onBtnClick}: Props) => {
     const [navbarItems, toggleNavBarItems] = useState(false);
     let itemsComponents = items.map((item, key) => {
         return <NBItem key={key} itemName={item.itemName} href={item.href} />
@@ -36,7 +37,7 @@ const NavBar = ({items}: Props) => {
             </button>
             <div className={`navbar-items ${navbarItems ? "" : "hidden"}`}>
                 {itemsComponents}
-                <button className="transparent-bg contact-btn">!יצירת קשר</button>
+                <button onClick={onBtnClick} className="transparent-bg contact-btn">!יצירת קשר</button>
             </div>
         </div>
     );
