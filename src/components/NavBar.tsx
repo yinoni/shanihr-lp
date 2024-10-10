@@ -32,7 +32,7 @@ const NavBar = ({items}: Props) => {
         <div className="navbar-container">
             <h1 className="logo">SHANI HR</h1>
             <button className="navbar-menu" onClick={onMenuBtnClick} >
-                <FontAwesomeIcon icon={faBars} />
+                <FontAwesomeIcon icon={faBars} color="#002B5B" />
             </button>
             <div className={`navbar-items ${navbarItems ? "" : "hidden"}`}>
                 {itemsComponents}

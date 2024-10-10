@@ -33,8 +33,8 @@ const Carousel = ({images}: Props) => {
                 <div className="img-wrapper"><img className="secondary-img" src={images[nextImg]} alt="img" /></div>
             </div>
             <div className="btns">
-                <button className="switch-btn" onClick={() => {onSwitchImageBtnClick(-1)}}><FontAwesomeIcon icon={faChevronLeft} /></button>
-                <button className="switch-btn" onClick={() => {onSwitchImageBtnClick(1)}}><FontAwesomeIcon icon={faChevronRight} /></button>
+                <button className="switch-btn" onClick={() => {onSwitchImageBtnClick(-1)}}><FontAwesomeIcon icon={faChevronLeft} color="#002B5B" /></button>
+                <button className="switch-btn" onClick={() => {onSwitchImageBtnClick(1)}}><FontAwesomeIcon icon={faChevronRight} color="#002B5B" /></button>
             </div>
             
         </div>
