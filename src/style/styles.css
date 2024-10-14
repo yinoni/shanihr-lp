@@ -431,13 +431,13 @@ body, #root{
     
     @media screen and (max-width: 400px){
         .opening-text .highlighted-txt .text{
-            font-size: 14px;
+            font-size: 12px;
         }
     }
 
     @media screen and (max-width: 200px){
         .opening-text .highlighted-txt .text{
-            font-size: 12px;
+            font-size: 10px;
         }
     }
 
