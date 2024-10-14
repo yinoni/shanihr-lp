@@ -18,9 +18,9 @@ const SolutionSec = () => {
                 <p className="text">בעזרת ניסיון רחב בגיוס והכוונה מקצועית, אני מתמקדת במציאת הטאלנטים שיתרמו באמת לארגון שלכם</p>
                 <div className="experience-section">
                     <div className="left-container">
-                        <ExperienceCard icon={faHammer} cardTopic="נסיון מקצועי" cardTxt='אני בעלת ניסיון בגיוס 1,000 עובדים לחברות שונות, כולל ניהול התהליך מהגדרת הדרישות ועד לבחירת המועמדים' />
-                        <ExperienceCard icon={faBookOpen} cardTopic="התעסקות במגוון תחומים" cardTxt='עבדתי עם לקוחות מתחומים שונים, כמו נדל"ן, טלמרקטינג, קוסמטיקה, הייטק ומסעדות, מה שאפשר לי לפתח הבנה מעמיקה של צרכי כל לקוח' />
-                        <ExperienceCard icon={faPeopleGroup} cardTopic="קבוצות איכות" cardTxt='קבוצה של כ-500 מחפשי עבודה איכותיים מכל הארץ, עם מגוון מיומנויות וניסיון, מאפשרת לי להתאים את המועמדים הטובים ביותר לצרכי החברות' />
+                        <ExperienceCard icon={faHammer} cardTopic="נסיון מקצועי" cardTxt='ניסיון גיוס של כ-1000 עובדים לחברות מכל הארץ' />
+                        <ExperienceCard icon={faBookOpen} cardTopic="התעסקות במגוון תחומים" cardTxt='אני עוזרת לבני עסקים בכל התחומים' />
+                        <ExperienceCard icon={faPeopleGroup} cardTopic="קבוצות איכות" cardTxt='קבוצות וואטסאפ ופיסוק פעילות של כ-1000 מחפשי עבודה איכותיים' />
                     </div>
                     <img src={successSvg} alt="svg" />
                 </div>

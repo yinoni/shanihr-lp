@@ -6,6 +6,8 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 interface NBItemsProps{
     itemName: string,
     href: string,
+    onBtnClick: () => void
+
 }
 
 interface Props{
@@ -14,16 +16,14 @@ interface Props{
 }
 
 
-const NBItem = ({itemName, href}: NBItemsProps) => {
-    return <a href={href} className="navbar-item">{itemName}</a>;
+const NBItem = ({itemName, href, onBtnClick}: NBItemsProps) => {
+    return <a href={href} onClick={onBtnClick} className="navbar-item">{itemName}</a>;
 }
 
 
 const NavBar = ({items, onBtnClick}: Props) => {
     const [navbarItems, toggleNavBarItems] = useState(false);
-    let itemsComponents = items.map((item, key) => {
-        return <NBItem key={key} itemName={item.itemName} href={item.href} />
-    });
+    
 
     const onMenuBtnClick = () => {
         toggleNavBarItems(!navbarItems);
@@ -33,6 +33,10 @@ const NavBar = ({items, onBtnClick}: Props) => {
         onBtnClick();
         toggleNavBarItems(false);
     }
+
+    let itemsComponents = items.map((item, key) => {
+        return <NBItem onBtnClick={onNBItemClick} key={key} itemName={item.itemName} href={item.href} />
+    });
 
     return (
         <div className="navbar-container">

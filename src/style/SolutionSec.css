@@ -55,6 +55,7 @@
     justify-content: space-evenly;
 }
 
+
 .experience-section .left-container{
     text-align: right;
     margin-right: 100px;
@@ -62,7 +63,12 @@
 
 .experience-section .left-container .exp-card{
     margin-top: 12%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 100;
+    background-color: white;
 }
+
 
 
 .solution-cont .main-info .experience-section img{

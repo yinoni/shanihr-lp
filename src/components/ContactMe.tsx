@@ -17,7 +17,7 @@ const ContactMe = () => {
                 <img className="illustration" src={contactme} alt="svg" />
                 <div className="text-cont">
                     <h1 className="heading">!צרו קשר עוד היום</h1>
-                    <p className="text"> אני מזמינה אותך לשוחח ולגלות איך אני יכולה לעזור לך לגייס עובדים בקלות ובנוחות</p>
+                    <p className="text"> אני מזמינה אותך לשוחח איתי ולבדוק איך אוכל לעזור לך לגייס עובדים ללא כאבי ראש,עלויות מיותרות ותהליך מהנה</p>
                 </div>
                 <button className="btn" onClick={onContactMeBtnClick}>
                     <p className="text">לשליחת הודעת וואטסאפ</p>

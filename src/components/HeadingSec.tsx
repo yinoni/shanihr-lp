@@ -32,13 +32,10 @@ const HeadingSec = ({onBtnClick}: Props) => {
             <div className="main">
                 <img src={cowrokers} className="coworkers-img" alt='svg' />
                 <div className="opening-text">
-                    <h1 className="heading">!המועמד המושלם מחכה לכם</h1>
-                    <p className="paragraph">
-                    בעולם המהיר של היום, ההצלחה שלך תלויה בכוח העבודה שלך. 
-                    אני מתמחה ביצירת פתרונות מותאמים אישית בתחום משאבי אנוש, כדי לסייע לך לגייס ולפתח כישרונות מובילים. אני כאן כדי להוביל אותך להצלחה
-                    </p>
+                    <h1 className="heading">?בעל/ת עסק</h1>
+                    <p className="paragraph">מכיר את הקושי בחיפוש עובדים איכותיים? בקביעת ראיונות עבודה שלא מגיעים אליהם? כבעל עסק, אתה משלם משכורת שלמה לעובד משאבי אנוש, או שוכר חברת השמה יקרה? מעכשיו יש פתרון פשוט, מהיר וזול יותר</p>
                     <div className="highlighted-txt">
-                        <p className="text">!הצטרפו אליי, ונבנה יחד צוות מנצח</p>
+                        <p className="text">!איתור כוח אדם איכותי ומדוייק - על בסיס הצלחה בלבד</p>
                         <img className="image" src={highlighted} alt='svg' />
                     </div>
                     <button onClick={onBtnClick} className="contact-btn">!צרו קשר עכשיו</button>
