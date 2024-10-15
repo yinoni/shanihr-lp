@@ -19,7 +19,7 @@ const SolutionSec = () => {
                 <div className="experience-section">
                     <div className="left-container">
                         <ExperienceCard icon={faHammer} cardTopic="נסיון מקצועי" cardTxt='ניסיון גיוס של כ-1000 עובדים לחברות מכל הארץ' />
-                        <ExperienceCard icon={faBookOpen} cardTopic="התעסקות במגוון תחומים" cardTxt='אני עוזרת לבני עסקים בכל התחומים' />
+                        <ExperienceCard icon={faBookOpen} cardTxt='נסיון גיוס במגוון תחומים, חברות קוסמטיקה, נדל"ן,מסעדות, תפקידי אדמינסטרציה ושירות לקוחות בכל רחבי הארץ' cardTopic='אני עוזרת לבעלי עסקים בכל התחומים' />
                         <ExperienceCard icon={faPeopleGroup} cardTopic="קבוצות איכות" cardTxt='קבוצות וואטסאפ ופיסוק פעילות של כ-1000 מחפשי עבודה איכותיים' />
                     </div>
                     <img src={successSvg} alt="svg" />

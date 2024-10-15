@@ -365,15 +365,23 @@ body, #root{
     .exp-card{
         box-shadow: 1px 3px 10px rgba(10, 10, 10, 0.26);
         position: relative;
-        padding: 15px 20px;
+        padding: 50px 20px;
         border-radius: 15px;
-        height: 300px;
+        min-height: fit-content;
         flex-direction: column-reverse;
         align-items: flex-end;
     }
 
+    .exp-card .card-topic{
+        font-size: 18px;
+    }
+
+    .exp-card .card-txt{
+        font-size: 14px;
+    }
+
     .exp-card .icon{
-        margin: 30px 0;
+        margin: 10px 0 30px 0;
     }
 
 
@@ -439,6 +447,8 @@ body, #root{
         .opening-text .highlighted-txt .text{
             font-size: 12px;
         }
+
+        
     }
 
     
