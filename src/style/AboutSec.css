@@ -9,21 +9,19 @@
 
 .image-container{
     position: relative;
-    width: 30%;
-
 }
 
 .image-container::after,
 .image-container::before{
     content: "";
     width: 100%;
-    border-radius: 30px;
     background-color: #2B2730;
     height: 100%;
     position: absolute;
     right: 20px;
     z-index: -1;
-    top: 5px
+    top: 5px;
+    border-radius: 50%;
 }
 
 .image-container::before{
@@ -33,17 +31,12 @@
 }
 
 .image-container img{
-    width: 100%;
-    border-radius: 30px;
-    object-fit: fill;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    object-fit:cover;
 }
 
-
-.reactangle .text{
-    color: white;
-    font-size: 25px;
-    line-height: 1.4;
-}
 
 .about-text{
     width: 50%;

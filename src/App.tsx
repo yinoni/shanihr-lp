@@ -20,7 +20,6 @@ function App() {
     <div className='container'>
         <HeadingSec onBtnClick={onContactMeBtnClick} />
         <SolutionSec />
-        <AboutSec />
         <ReviewsSection />
         <div ref={ref} className='contact-me-section'>
           <ContactMe />
