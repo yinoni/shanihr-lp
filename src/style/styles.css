@@ -253,7 +253,7 @@ body, #root{
     }
     
     .section{
-        margin-bottom: 200px;
+        margin-bottom: 150px;
     }
 
     .navbar-container{
@@ -302,6 +302,7 @@ body, #root{
 
     .main .paragraph{
         margin: 10px 0;
+        margin-right: 20px;
     }
     
     .main .paragraph::marker{
@@ -404,7 +405,9 @@ body, #root{
 
     }
 
-
+    .reviews-cont{
+        margin-top: -100px;
+    }
 
     .carousel-container .images-container .img-wrapper{
         display: none;
@@ -444,8 +447,8 @@ body, #root{
         }
 
         .solution-cont .image-container img{
-            width: 250px;
-            height: 250px;
+            width: 300px;
+            height: 300px;
     
         }
 
